@@ -1,3 +1,7 @@
+:root {
+  --main-txt-color:rgb(223, 223, 223);
+}
+
 body{
     background-color: rgb(28, 29, 28);
     font-family: 'Roboto', sans-serif;
@@ -8,12 +12,34 @@ h1#center{
 }
 
 h{
-    color: rgb(223, 223, 223);
+    color: var(--main-txt-color);
     position: relative;
     text-align: center;
 }
+
+h2{
+    text-align: center;
+    color: var(--main-txt-color);
+}
 p{
-    color: rgb(223, 223, 223);
+    color: var(--main-txt-color);
     position: relative;
-    font-size: smaller;
+    font-size: 16pt;
+    text-align: center;
+    /* background-color: rgb(12, 41, 54); */
+}
+
+.green-header{
+    color: rgb(66, 245, 158);
+}
+
+.contacts-bar{
+    text-align: center;
+    color: rgb(90, 85, 85);
+    font-size: small;
+}
+
+a{
+    color: rgb(189, 176, 176);
+    text-decoration: none;
 }
