@@ -79,6 +79,7 @@ table, th, td {
 .img-small{
     width: 550px;
     height: 350px;
+    object-fit: cover;
 }
 
 img{
