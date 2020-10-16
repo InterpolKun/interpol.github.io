@@ -43,7 +43,12 @@ p{
 }
 
 .green-header{
-    color: rgb(66, 245, 158);
+    color: rgb(66, 245, 158) !important;
+}
+
+.small-txt{
+  font-size: small;
+  color: whitesmoke;
 }
 
 .contacts-bar{
@@ -57,9 +62,14 @@ a{
     text-decoration: none;
 }
 
+a#header-link{
+    color: rgb(66, 245, 158) !important;
+}
+
 .narrow-block{
     padding-left: 20%;
     padding-right: 20%;
+    margin-bottom: 0;
 }
 
 .highlight{
@@ -76,10 +86,24 @@ table, th, td {
   padding: 15px;
 }
 
+/* Images styles */
+
 .img-small{
     width: 550px;
     height: 350px;
     object-fit: cover;
+}
+
+.screenshot{
+  width: 95%;
+  object-fit: contain;
+}
+
+
+
+.cover{
+  width: 50%;
+  object-fit: cover;
 }
 
 img{
@@ -262,4 +286,15 @@ article{
   color: #f8f8f8;
   background-color:rgb(74, 182, 130);
   cursor: pointer;
+}
+
+/* Media styles */
+video{
+  display: inline;
+  margin: 0 auto;
+  border-radius: 2%;
+}
+
+#evil-money{
+  /* background-color: rgb(12, 36, 12); */
 }
