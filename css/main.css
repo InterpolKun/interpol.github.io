@@ -100,6 +100,10 @@ table, th, td {
     object-fit: scale-down;
 }
 
+img#vertical{
+  width: 30%;
+}
+
 .screenshot{
   width: 95%;
   object-fit: contain;
