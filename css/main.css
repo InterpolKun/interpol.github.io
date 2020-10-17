@@ -66,6 +66,12 @@ a#header-link{
     color: rgb(66, 245, 158) !important;
 }
 
+a#link{
+  color: rgb(66, 245, 158);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
 .narrow-block{
     padding-left: 20%;
     padding-right: 20%;
@@ -91,15 +97,13 @@ table, th, td {
 .img-small{
     width: 550px;
     height: 350px;
-    object-fit: cover;
+    object-fit: scale-down;
 }
 
 .screenshot{
   width: 95%;
   object-fit: contain;
 }
-
-
 
 .cover{
   width: 50%;
