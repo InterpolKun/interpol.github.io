@@ -306,3 +306,12 @@ video{
 /* #evil-money{
   background-color: rgb(12, 36, 12);
 } */
+
+#c{
+  background-color: deepskyblue;
+  color: whitesmoke;
+}
+#csharp{
+  background-color: rgb(46, 124, 46);
+  color: whitesmoke;
+}
