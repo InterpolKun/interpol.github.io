@@ -310,8 +310,18 @@ video{
 #c{
   background-color: deepskyblue;
   color: whitesmoke;
+  border-radius: 2%;
+  padding: 1px 4px;
 }
 #csharp{
-  background-color: rgb(46, 124, 46);
+  background-color: rgb(88, 187, 58);
   color: whitesmoke;
+  border-radius: 2%;
+  padding: 1px 4px;
+}
+#cpp{
+  background-color: rgb(250, 70, 130);
+  color: whitesmoke;
+  border-radius: 2%;
+  padding: 1px 4px;
 }
