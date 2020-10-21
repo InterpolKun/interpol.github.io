@@ -325,3 +325,9 @@ video{
   border-radius: 2%;
   padding: 1px 4px;
 }
+
+.background-video{
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
