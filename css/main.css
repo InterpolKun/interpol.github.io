@@ -46,6 +46,10 @@ p{
     color: rgb(66, 245, 158) !important;
 }
 
+#select{
+  background-color: rgb(214, 214, 214);
+}
+
 .small-txt{
   font-size: small;
   color: whitesmoke;
@@ -54,7 +58,10 @@ p{
 .contacts-bar{
     text-align: center;
     color: var(--main-txt-color);
-    font-size: small;
+    font-size: smaller;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 a{
