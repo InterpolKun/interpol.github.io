@@ -24,6 +24,35 @@
 <body>
     <div class="container">
         <h1 class="main-text">
+            Nyctophobia
+            <p class="small-txt">(Сентябрь 2021)
+                <span id="csharp">C#</span>
+            </p>
+            <img src="/media/img/nyctophobia_cover.webp" class="cover">
+        </h1>
+        <p class="narrow-block">
+            Игра на Unity, созданная в рамках 48-часового локального геймджема в Saber Interactive. Я занимался общим
+            геймдизайном, артдирекшеном,
+            делал звуки, шейдеры, частично писал игровую логику, и руководил всеми рабочими процессами.
+        </p>
+        <a href="https://warlikecracker.itch.io/nyctophobia"><button class="link-button">Сыграть на itch</button></a>
+
+        <div class="archive">
+            <article>
+                <img class="screenshot" src="/media/img/nyctophobia_1.webp">
+            </article>
+            <article>
+                <img class="screenshot" src="/media/img/nyctophobia_2.webp">
+            </article>
+            <article>
+                <img class="screenshot" src="/media/img/nyctophobia_3.webp">
+            </article>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1 class="main-text">
             Chelyabinsk Shlicktaper
             <p class="small-txt">(Декабрь 2016)
                 <span id="csharp">C#</span>
@@ -75,7 +104,8 @@
             <p class="small-txt">(Март 2017)
                 <span id="csharp">C#</span>
             </p>
-            <img src="/media/img/ezenderkeeper.webp" class="cover"> </h1>
+            <img src="/media/img/ezenderkeeper.webp" class="cover">
+        </h1>
         <p class="narrow-block">
             Этот совместный проект (дуо) — результат участия в первом геймджеме. К сожалению, мы присоединились
             очень
@@ -109,7 +139,8 @@
             <p class="small-txt">(Октябрь 2017)
                 <span id="csharp">C#</span>
             </p>
-            <img src="/media/img/piratefable.webp" class="cover"> </h1>
+            <img src="/media/img/piratefable.webp" class="cover">
+        </h1>
         <p class="narrow-block">
             Еще один совместный проект (дуо), с помощью которого я изучал работу вышедшей тогда TileMap System в Unity и
             адаптировал raycast-контроллер. Все передвижение игрока и врагов в игре сделано на рейкастах (решение не
@@ -139,8 +170,10 @@
         <h1 class="main-text">
             Evil Money
             <p class="small-txt">(Декабрь 2017)
-                <span id="csharp">C#</span></p>
-            <img src="/media/img/evilmoney.png" class="cover"> </h1>
+                <span id="csharp">C#</span>
+            </p>
+            <img src="/media/img/evilmoney.png" class="cover">
+        </h1>
         <p class="narrow-block">
             Совместный (дуо) проект, <span class="highlight">созданный в течение 72 часов на геймджеме Ludum Dare
                 40</span>. Я
@@ -182,30 +215,25 @@
     showSlides(slideIndex);
 
     // Next/previous controls
-    function plusSlides(n)
-    {
+    function plusSlides(n) {
         showSlides(slideIndex += n);
     }
 
     // Thumbnail image controls
-    function currentSlide(n)
-    {
+    function currentSlide(n) {
         showSlides(slideIndex = n);
     }
 
-    function showSlides(n)
-    {
+    function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
         if (n > slides.length) { slideIndex = 1 }
         if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++)
-        {
+        for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        for (i = 0; i < dots.length; i++)
-        {
+        for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex - 1].style.display = "block";
