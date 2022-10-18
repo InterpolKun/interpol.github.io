@@ -1,15 +1,19 @@
 :root {
   --main-txt-color: rgb(223, 223, 223);
+  --first-color: #7f9bcd;
+  --second-color: #1d0d32
 }
 
 ::selection {
-  background: rgb(51, 156, 106);
+  background: #7f9bcd;
 }
 
 body {
-  background-color: rgb(28, 29, 28);
+  background-color: #1d0d32;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 h1#center {
@@ -44,11 +48,11 @@ p {
 }
 
 .green-header {
-  color: rgb(66, 245, 158) !important;
+  color: var(--first-color) !important;
 }
 
 #select {
-  background-color: rgb(214, 214, 214);
+  background-color: var(--second-color);
 }
 
 .small-txt {
@@ -71,11 +75,11 @@ a {
 }
 
 a#header-link {
-  color: rgb(66, 245, 158) !important;
+  color: var(--first-color) !important;
 }
 
 a#link {
-  color: rgb(66, 245, 158);
+  color: var(--first-color);
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
@@ -87,7 +91,7 @@ a#link {
 }
 
 .highlight {
-  color: rgb(66, 245, 158);
+  color: var(--first-color);
 }
 
 .main-text {
@@ -145,17 +149,30 @@ img:hover {
   grid-auto-flow: dense;
 }
 
-/* Extra-wide grid-posts */
+.line-stroke {
+  background-color: var(--first-color);
+  padding: 0px;
+  height: 4px;
+  border: 0px none;
+  display: block;
+  color: inherit;
+}
 
-/* .article:nth-child(31n + 1) {
-  grid-column: 1 / -1;
+.diagonal-lines {
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 8px, var(--first-color) 8px, var(--first-color) 10px);
+  padding: 0px;
+  aspect-ratio: 40 / 1;
+  border: 0px none;
+  display: block;
+  color: inherit;
 }
-.article:nth-child(16n + 2) {
-  grid-column: -3 / -1;
+
+.narrow-block.thin-border {
+  margin-top: 16px;
+  border-radius: 0px;
+  padding: 16px;
+  box-shadow: var(--first-color) 0px 0px 0px 1px;
 }
-.article:nth-child(16n + 10) {
-  grid-column: 1 / -2;
-}  */
 
 /* Single column display for phones */
 @media (max-width: 459px) {
@@ -312,12 +329,12 @@ article {
   border-radius: 12px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: rgb(66, 163, 116);
+  background-color: var(--first-color);
 }
 
 .link-button:hover {
   color: #f8f8f8;
-  background-color: rgb(74, 182, 130);
+  background-color: var(--first-color);
   cursor: pointer;
 }
 
