@@ -24,7 +24,17 @@
 <body>
     <div id="center">
         <p class="narrow-block">
-            Привет, меня зовут <b>Денис</b>. Мне 24, я увлекаюсь созданием игр, программированием и интересуюсь
+            Привет, меня зовут <b>Денис</b>. Мне <span id="spanDate"></span>,
+            <script>var today = new Date();
+                var birthDate = new Date("1997/04/21");
+                var age = today.getFullYear() - birthDate.getFullYear();
+                var m = today.getMonth() - birthDate.getMonth();
+                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                    age--;
+                }
+                document.getElementById("spanDate").innerHTML = age;
+            </script> я увлекаюсь созданием игр,
+            программированием и интересуюсь
             новыми технологиями. Окончил бакалавриат Московского Политеха по направлению <span
                 class="highlight">«Информатика и
                 вычислительная техника»</span>.
